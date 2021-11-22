@@ -1,0 +1,8 @@
+name: Multistep Form Wizard Examples
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+dependencies:
+  - multistep_form_wizard:multistep_form_wizard
+  - drupal:node

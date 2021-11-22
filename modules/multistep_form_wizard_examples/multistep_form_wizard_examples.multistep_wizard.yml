@@ -1,0 +1,24 @@
+# Put same id into your form's getFormId method.
+# @see \Drupal\multistep_form_wizard_examples\Form\BookBuyMultistepForm::getFormId
+multistep_form_wizard_examples_book_buy_miltistep:
+  # (optional) You can use wizard to provide more as a form_state information holder.
+  class: \Drupal\multistep_form_wizard_examples\BookWizard
+  steps:
+    -
+      # You can use step id as identifier to skip, or to return to certain step.
+      # @see \Drupal\multistep_form_wizard_examples\Form\BuyBookStep\Description::goToFirstStep
+      # @see \Drupal\multistep_form_wizard\Wizard\Wizard::setCurrentStepById
+      id: greetings
+      class: \Drupal\multistep_form_wizard_examples\Form\BuyBookStep\Greetings
+    -
+      id: book_attributes
+      class: \Drupal\multistep_form_wizard_examples\Form\BuyBookStep\BookAttributes
+    -
+      id: description
+      class: \Drupal\multistep_form_wizard_examples\Form\BuyBookStep\Description
+    -
+      id: graz
+      class: \Drupal\multistep_form_wizard_examples\Form\BuyBookStep\Congratulation
+  # (option) Enables ajax for the form.
+  # @see multistep_form_wizard/src/Step/BaseStep.php:94
+  ajax: TRUE

@@ -1,0 +1,4 @@
+services:
+  plugin.manager.multistep_wizard:
+    class: Drupal\multistep_form_wizard\WizardPluginManager
+    arguments: ['@module_handler', '@cache.discovery']

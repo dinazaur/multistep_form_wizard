@@ -1,0 +1,12 @@
+{
+    "name": "drupal/multistep_form_wizard",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Nazariy Velychenko",
+            "homepage": "https://www.drupal.org/u/dinazaur",
+            "role": "Maintainer"
+        }
+    ]
+}

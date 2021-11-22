@@ -1,0 +1,7 @@
+multistep_form_wizard_examples.book_buy_miltistep:
+  path: '/post-book'
+  defaults:
+    _title: 'Buy book'
+    _form: 'Drupal\multistep_form_wizard_examples\Form\BookBuyMultistepForm'
+  requirements:
+    _permission: 'access content'
